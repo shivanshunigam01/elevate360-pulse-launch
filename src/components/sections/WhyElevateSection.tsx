@@ -86,7 +86,7 @@ export function WhyElevateSection() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             <span className="text-gradient">Why Choose</span>
             <br />
-            <span className="text-gradient">Elevate360?</span>
+            <span className="text-gradient">Elevate360 Digital?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We don't just promise results – we guarantee them. Here's the measurable impact we deliver.
@@ -128,7 +128,7 @@ export function WhyElevateSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <h3 className="text-2xl font-bold text-center mb-8 text-gradient">
-            Before vs After Elevate360
+            Before vs After Elevate360 Digital
           </h3>
           
           <div className="overflow-x-auto">

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Elevate360 Design System - Orange, Electric Blue, White Theme with Animated Gradients
+/* Elevate360 Digital Design System - Green, Blue, Navy Theme with Animated Gradients
 All colors MUST be HSL.
 */
 
@@ -10,43 +10,48 @@ All colors MUST be HSL.
   :root {
     /* Core Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --foreground: 210 40% 20%;
 
-    /* Electric Blue Palette */
-    --electric-blue: 200 100% 50%;
-    --electric-blue-light: 200 100% 70%;
-    --electric-blue-dark: 200 100% 30%;
+    /* Brand Green Palette (from logo arrow) */
+    --brand-green: 150 70% 45%;
+    --brand-green-light: 150 70% 55%;
+    --brand-green-dark: 150 70% 35%;
 
-    /* Orange Palette */
-    --brand-orange: 25 100% 55%;
-    --brand-orange-light: 25 100% 65%;
-    --brand-orange-dark: 25 100% 45%;
+    /* Brand Blue Palette (from logo drop) */
+    --brand-blue: 200 85% 50%;
+    --brand-blue-light: 200 85% 60%;
+    --brand-blue-dark: 200 85% 40%;
+
+    /* Brand Navy (from logo text) */
+    --brand-navy: 210 40% 25%;
+    --brand-navy-light: 210 40% 35%;
+    --brand-navy-dark: 210 40% 15%;
 
     /* UI Colors */
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 210 40% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 210 40% 20%;
 
-    --primary: 25 100% 55%;
+    --primary: 150 70% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 100% 50%;
+    --secondary: 200 85% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 15% 40%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 20% 40%;
 
-    --accent: 200 100% 95%;
-    --accent-foreground: 200 100% 30%;
+    --accent: 150 50% 95%;
+    --accent-foreground: 150 70% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 92%;
-    --input: 220 15% 96%;
-    --ring: 25 100% 55%;
+    --border: 210 20% 92%;
+    --input: 210 20% 96%;
+    --ring: 150 70% 45%;
 
     --radius: 0.75rem;
 
@@ -56,14 +61,14 @@ All colors MUST be HSL.
     --glass-shadow: 0 0% 0% / 0.1;
 
     /* Animated Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-orange)) 0%, hsl(var(--electric-blue)) 100%);
-    --gradient-secondary: linear-gradient(45deg, hsl(var(--electric-blue)) 0%, hsl(var(--brand-orange)) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-green)) 0%, hsl(var(--brand-blue)) 100%);
+    --gradient-secondary: linear-gradient(45deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-green)) 100%);
     --gradient-glass: linear-gradient(135deg, hsl(var(--glass-bg)) 0%, hsl(var(--glass-bg)) 100%);
-    --gradient-hero: radial-gradient(ellipse at center, hsl(var(--brand-orange) / 0.3) 0%, hsl(var(--electric-blue) / 0.3) 50%, transparent 100%);
+    --gradient-hero: radial-gradient(ellipse at center, hsl(var(--brand-green) / 0.3) 0%, hsl(var(--brand-blue) / 0.3) 50%, transparent 100%);
 
     /* Shadows */
-    --shadow-glow: 0 0 50px hsl(var(--brand-orange) / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(var(--electric-blue) / 0.2);
+    --shadow-glow: 0 0 50px hsl(var(--brand-green) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(var(--brand-blue) / 0.2);
     --shadow-glass: 0 8px 32px hsl(var(--glass-shadow));
 
     /* Animation Variables */
@@ -73,43 +78,47 @@ All colors MUST be HSL.
 
   .dark {
     /* Core Brand Colors - Dark Mode */
-    --background: 220 25% 5%;
+    --background: 210 30% 8%;
     --foreground: 0 0% 95%;
 
-    /* Electric Blue & Orange stay vibrant in dark mode */
-    --electric-blue: 200 100% 60%;
-    --electric-blue-light: 200 100% 75%;
-    --electric-blue-dark: 200 100% 40%;
+    /* Brand colors stay vibrant in dark mode */
+    --brand-green: 150 70% 50%;
+    --brand-green-light: 150 70% 60%;
+    --brand-green-dark: 150 70% 40%;
 
-    --brand-orange: 25 100% 60%;
-    --brand-orange-light: 25 100% 70%;
-    --brand-orange-dark: 25 100% 50%;
+    --brand-blue: 200 85% 55%;
+    --brand-blue-light: 200 85% 65%;
+    --brand-blue-dark: 200 85% 45%;
+
+    --brand-navy: 210 30% 85%;
+    --brand-navy-light: 210 30% 90%;
+    --brand-navy-dark: 210 30% 75%;
 
     /* UI Colors - Dark Mode */
-    --card: 220 25% 8%;
+    --card: 210 30% 12%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 25% 8%;
+    --popover: 210 30% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 25 100% 60%;
-    --primary-foreground: 220 25% 5%;
+    --primary: 150 70% 50%;
+    --primary-foreground: 210 30% 8%;
 
-    --secondary: 200 100% 60%;
-    --secondary-foreground: 220 25% 5%;
+    --secondary: 200 85% 55%;
+    --secondary-foreground: 210 30% 8%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 220 15% 60%;
+    --muted: 210 25% 18%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 200 80% 20%;
-    --accent-foreground: 200 100% 80%;
+    --accent: 150 40% 25%;
+    --accent-foreground: 150 70% 80%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 220 25% 5%;
+    --destructive-foreground: 210 30% 8%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 15%;
-    --ring: 25 100% 60%;
+    --border: 210 25% 22%;
+    --input: 210 25% 18%;
+    --ring: 150 70% 50%;
 
     /* Glassmorphism - Dark Mode */
     --glass-bg: 0 0% 100% / 0.05;
@@ -117,9 +126,9 @@ All colors MUST be HSL.
     --glass-shadow: 0 0% 0% / 0.3;
 
     /* Updated gradients for dark mode */
-    --gradient-hero: radial-gradient(ellipse at center, hsl(var(--brand-orange) / 0.2) 0%, hsl(var(--electric-blue) / 0.2) 50%, transparent 100%);
-    --shadow-glow: 0 0 50px hsl(var(--brand-orange) / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(var(--electric-blue) / 0.3);
+    --gradient-hero: radial-gradient(ellipse at center, hsl(var(--brand-green) / 0.2) 0%, hsl(var(--brand-blue) / 0.2) 50%, transparent 100%);
+    --shadow-glow: 0 0 50px hsl(var(--brand-green) / 0.4);
+    --shadow-card: 0 10px 30px -10px hsl(var(--brand-blue) / 0.3);
   }
 }
 
@@ -177,8 +186,8 @@ All colors MUST be HSL.
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(var(--brand-orange) / 0.4); }
-    50% { box-shadow: 0 0 40px hsl(var(--brand-orange) / 0.6), 0 0 60px hsl(var(--electric-blue) / 0.4); }
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--brand-green) / 0.4); }
+    50% { box-shadow: 0 0 40px hsl(var(--brand-green) / 0.6), 0 0 60px hsl(var(--brand-blue) / 0.4); }
   }
 
   .pulse-glow {

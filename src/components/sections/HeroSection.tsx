@@ -11,7 +11,7 @@ export function HeroSection() {
       {/* Floating Blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-orange-400/30 to-blue-500/30 rounded-full blur-xl floating-blob"
+          className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full blur-xl floating-blob"
           animate={{ 
             x: [0, 100, 0],
             y: [0, -50, 0],
@@ -20,7 +20,7 @@ export function HeroSection() {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-blue-500/30 to-orange-400/30 rounded-full blur-xl floating-blob"
+          className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-secondary/30 to-primary/30 rounded-full blur-xl floating-blob"
           animate={{ 
             x: [0, -80, 0],
             y: [0, 60, 0],
@@ -29,7 +29,7 @@ export function HeroSection() {
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
         />
         <motion.div
-          className="absolute bottom-20 left-1/3 w-20 h-20 bg-gradient-to-r from-orange-400/20 to-blue-500/20 rounded-full blur-xl floating-blob"
+          className="absolute bottom-20 left-1/3 w-20 h-20 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl floating-blob"
           animate={{ 
             x: [0, 60, 0],
             y: [0, -40, 0],
@@ -79,7 +79,7 @@ export function HeroSection() {
         >
           <Button
             size="lg"
-            className="magnetic-hover pulse-glow bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white border-none text-lg px-8 py-6 rounded-xl"
+            className="magnetic-hover pulse-glow bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white border-none text-lg px-8 py-6 rounded-xl"
           >
             <BarChart className="w-5 h-5 mr-2" />
             Book a Strategy Call
