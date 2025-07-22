@@ -29,8 +29,8 @@ const services = [
   {
     icon: Users,
     title: "Social Media Growth",
-    description: "Build authentic relationships with commercial vehicle buyers in your area.",
-    expandedText: "Strategic content creation, community building, and influencer partnerships specifically designed for the commercial vehicle ecosystem in India.",
+    description: "Build authentic relationships with  your business buyers in your area.",
+    expandedText: "Strategic content creation, community building, and influencer partnerships specifically designed for the  your business ecosystem in India.",
     color: "from-purple-500 to-pink-500"
   },
   {
@@ -43,8 +43,8 @@ const services = [
   {
     icon: Globe,
     title: "Website Development",
-    description: "High-converting, mobile-first websites optimized for commercial vehicle sales.",
-    expandedText: "Custom-built dealership websites with advanced search, inventory management, and lead capture forms optimized for commercial vehicle specifications.",
+    description: "High-converting, mobile-first websites optimized for  your business sales.",
+    expandedText: "Custom-built dealership websites with advanced search, inventory management, and lead capture forms optimized for  your business specifications.",
     color: "from-indigo-500 to-blue-500"
   },
   {

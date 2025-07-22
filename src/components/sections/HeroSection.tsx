@@ -63,9 +63,15 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           >
-            <span className="text-gradient block">Digital.</span>
-            <span className="text-gradient block">Local.</span>
-            <span className="text-gradient block">Impactful.</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="text-gradient">Digital.</span>
+              <br />
+              <span className="text-gradient">Local.</span>
+              <br />
+              <span className="text-gradient">Impactful.</span>
+          
+              
+            </h1>
           </motion.h1>
 
           <motion.p
