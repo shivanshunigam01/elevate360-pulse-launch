@@ -1,7 +1,8 @@
-import { motion } from "framer-motion"
-import { ThemeToggle } from "@/components/ThemeToggle"
-import { Button } from "@/components/ui/button"
-import { Phone } from "lucide-react"
+import { motion } from "framer-motion";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { Button } from "@/components/ui/button";
+import { Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -14,9 +15,15 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="text-2xl font-bold text-gradient">
-            Elevate360 Digital
+            <Link to="/">
+              <img
+                src="/favicon.ico"
+                alt="Elevate360 Logo"
+                className="h-10 w-10"
+              />
+            </Link>
           </div>
-          
+
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <Button
@@ -30,5 +37,5 @@ export function Header() {
         </div>
       </div>
     </motion.header>
-  )
+  );
 }

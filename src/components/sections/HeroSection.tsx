@@ -1,18 +1,18 @@
-import { motion } from "framer-motion"
-import { ArrowRight, Play, BarChart } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import { ArrowRight, Play, BarChart } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden mt-10">
       {/* Animated Background */}
       <div className="absolute inset-0 hero-bg"></div>
-      
+
       {/* Floating Blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full blur-xl floating-blob"
-          animate={{ 
+          animate={{
             x: [0, 100, 0],
             y: [0, -50, 0],
             scale: [1, 1.2, 1],
@@ -21,21 +21,31 @@ export function HeroSection() {
         />
         <motion.div
           className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-r from-secondary/30 to-primary/30 rounded-full blur-xl floating-blob"
-          animate={{ 
+          animate={{
             x: [0, -80, 0],
             y: [0, 60, 0],
             scale: [1, 0.8, 1],
           }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
         />
         <motion.div
           className="absolute bottom-20 left-1/3 w-20 h-20 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl floating-blob"
-          animate={{ 
+          animate={{
             x: [0, 60, 0],
             y: [0, -40, 0],
             rotate: [0, 360, 0],
           }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 4 }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 4,
+          }}
         />
       </div>
 
@@ -47,7 +57,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-8"
         >
-          <motion.h1 
+          <motion.h1
             className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-6"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -57,16 +67,25 @@ export function HeroSection() {
             <span className="text-gradient block">Local.</span>
             <span className="text-gradient block">Impactful.</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Transform your commercial vehicle dealership with AI-powered marketing strategies that deliver 
-            <span className="text-gradient font-semibold"> 300% more qualified leads</span> and 
-            <span className="text-gradient font-semibold"> 40% lower cost per lead</span>.
+            Transform your commercial vehicle dealership with AI-powered
+            marketing strategies that deliver
+            <span className="text-gradient font-semibold">
+              {" "}
+              300% more qualified leads
+            </span>{" "}
+            and
+            <span className="text-gradient font-semibold">
+              {" "}
+              40% lower cost per lead
+            </span>
+            .
           </motion.p>
         </motion.div>
 
@@ -85,7 +104,7 @@ export function HeroSection() {
             Book a Strategy Call
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
-          
+
           <Button
             variant="outline"
             size="lg"
@@ -129,5 +148,5 @@ export function HeroSection() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
