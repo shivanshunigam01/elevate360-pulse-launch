@@ -2,57 +2,62 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { useState } from "react"
 import { 
-  Target, 
+  Tv, 
   TrendingUp, 
   Users, 
-  Database, 
+  Megaphone, 
   Globe, 
+  Camera,
+  ArrowRight,
+  Radio,
   MapPin,
-  ArrowRight
+  Target,
+  Smartphone,
+  BarChart3
 } from "lucide-react"
 
 const services = [
   {
-    icon: Target,
-    title: "District-Level Strategy",
-    description: "Hyperlocal market analysis and targeted campaigns for maximum regional impact.",
-    expandedText: "Our AI-powered district mapping identifies untapped opportunities in your local market, creating custom strategies that speak directly to regional customer behavior patterns.",
-    color: "from-orange-500 to-red-500"
+    icon: Tv,
+    title: "ATL Services",
+    description: "TV, Radio, Print campaigns and outdoor advertising with strategic media buying.",
+    expandedText: "Comprehensive above-the-line marketing including TV commercials, radio spots, print advertisements, outdoor hoardings, and transit ads with optimized media buying and budget estimation.",
+    color: "from-primary to-secondary"
   },
   {
     icon: TrendingUp,
-    title: "Performance Marketing",
-    description: "Data-driven campaigns that deliver 40% lower CPL and 300% more qualified leads.",
-    expandedText: "Advanced attribution modeling and real-time optimization ensure every rupee spent generates maximum ROI through our proprietary lead scoring algorithms.",
-    color: "from-blue-500 to-cyan-500"
+    title: "Digital Marketing",
+    description: "Meta & Google Ads, Local SEO, website design, and CRM-powered lead nurturing.",
+    expandedText: "Complete digital ecosystem including performance marketing on Meta and Google, local SEO optimization, professional website development, and advanced CRM integration for seamless lead management.",
+    color: "from-secondary to-accent"
   },
   {
     icon: Users,
-    title: "Social Media Growth",
-    description: "Build authentic relationships with commercial vehicle buyers in your area.",
-    expandedText: "Strategic content creation, community building, and influencer partnerships specifically designed for the commercial vehicle ecosystem in India.",
-    color: "from-purple-500 to-pink-500"
+    title: "BTL Services",
+    description: "Dealer events, school promotions, and on-ground staff deployment for direct engagement.",
+    expandedText: "Below-the-line activations including dealer engagement events, educational institution promotions, targeted activation campaigns, and professional on-ground staff deployment for maximum impact.",
+    color: "from-accent to-primary"
   },
   {
-    icon: Database,
-    title: "ERP/CRM Integration",
-    description: "Seamless tech stack integration for automated lead nurturing and sales pipeline management.",
-    expandedText: "Connect your existing systems with our advanced CRM to automate follow-ups, track customer journeys, and never lose a potential sale again.",
-    color: "from-green-500 to-emerald-500"
-  },
-  {
-    icon: Globe,
-    title: "Website Development",
-    description: "High-converting, mobile-first websites optimized for commercial vehicle sales.",
-    expandedText: "Custom-built dealership websites with advanced search, inventory management, and lead capture forms optimized for commercial vehicle specifications.",
-    color: "from-indigo-500 to-blue-500"
+    icon: Camera,
+    title: "Content & Video Production",
+    description: "Professional video shoots, reels creation, and visual storytelling for your brand.",
+    expandedText: "Complete video production services including promotional videos, social media reels, product demonstrations, testimonial videos, and creative visual content optimized for all platforms.",
+    color: "from-secondary to-primary"
   },
   {
     icon: MapPin,
-    title: "Hyperlocal Brand Activation",
-    description: "Community-driven marketing campaigns that establish your dealership as the local leader.",
-    expandedText: "Ground-level activations, local partnerships, and community events that build trust and establish your dealership as the go-to choice in your district.",
-    color: "from-orange-500 to-yellow-500"
+    title: "Onsite Campaigns",
+    description: "Mobile van branding, product demos, and festive event promotions with feedback systems.",
+    expandedText: "On-location marketing activations including branded mobile van campaigns, live product demonstrations, festive event promotions, and comprehensive survey and feedback collection systems.",
+    color: "from-primary to-accent"
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & Optimization",
+    description: "Data-driven insights, performance tracking, and ROI optimization across all channels.",
+    expandedText: "Advanced analytics suite providing real-time performance insights, cross-channel attribution, ROI optimization, and actionable recommendations to maximize your marketing investment.",
+    color: "from-accent to-secondary"
   }
 ]
 
@@ -73,12 +78,12 @@ export function ServicesSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-gradient">Complete Digital</span>
+            <span className="text-gradient">360° Marketing</span>
             <br />
-            <span className="text-gradient">Transformation Suite</span>
+            <span className="text-gradient">Solutions Suite</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From strategy to execution, we provide everything your dealership needs to dominate the digital landscape.
+            From ATL to BTL, digital to onsite - we provide comprehensive marketing solutions that transform brands across all industries and channels.
           </p>
         </motion.div>
 

@@ -53,9 +53,9 @@ export function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           >
-            <span className="text-gradient block">Digital.</span>
-            <span className="text-gradient block">Local.</span>
-            <span className="text-gradient block">Impactful.</span>
+            <span className="text-gradient block">Transforming Brands</span>
+            <span className="text-gradient block">Through 360°</span>
+            <span className="text-gradient block">Marketing Power</span>
           </motion.h1>
           
           <motion.p 
@@ -64,9 +64,8 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Transform your commercial vehicle dealership with AI-powered marketing strategies that deliver 
-            <span className="text-gradient font-semibold"> 300% more qualified leads</span> and 
-            <span className="text-gradient font-semibold"> 40% lower cost per lead</span>.
+            Crafting a dynamic digital ecosystem that seamlessly integrates all marketing channels to transform visitors into loyal clients, ensuring a 
+            <span className="text-gradient font-semibold"> holistic and impactful digital presence</span> across all industries.
           </motion.p>
         </motion.div>
 
@@ -82,7 +81,7 @@ export function HeroSection() {
             className="magnetic-hover pulse-glow bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white border-none text-lg px-8 py-6 rounded-xl"
           >
             <BarChart className="w-5 h-5 mr-2" />
-            Book a Strategy Call
+            Let's Build Your Brand
             <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
           
@@ -104,16 +103,16 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 1.2 }}
         >
           <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">500+</div>
-            <div className="text-muted-foreground">Dealerships Transformed</div>
+            <div className="text-3xl font-bold text-gradient mb-2">200+</div>
+            <div className="text-muted-foreground">Brands Transformed</div>
           </div>
           <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">₹50Cr+</div>
+            <div className="text-3xl font-bold text-gradient mb-2">₹100Cr+</div>
             <div className="text-muted-foreground">Revenue Generated</div>
           </div>
           <div className="glass p-6 rounded-2xl">
-            <div className="text-3xl font-bold text-gradient mb-2">300%</div>
-            <div className="text-muted-foreground">Average Lead Increase</div>
+            <div className="text-3xl font-bold text-gradient mb-2">360°</div>
+            <div className="text-muted-foreground">Marketing Solutions</div>
           </div>
         </motion.div>
       </div>
