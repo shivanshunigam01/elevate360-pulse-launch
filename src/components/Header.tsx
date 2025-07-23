@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import { Button } from "@/components/ui/button"
 import { Phone, ChevronDown } from "lucide-react"
+import { Link } from "react-router-dom"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -21,17 +22,19 @@ export function Header() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="text-2xl font-bold text-gradient">
+          <Link to="/" className="text-2xl font-bold text-gradient">
             Elevate360 Digital
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuLink className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                    Home
+                  <NavigationMenuLink asChild>
+                    <Link to="/" className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                      Home
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 
@@ -41,8 +44,10 @@ export function Header() {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="w-[400px] p-4">
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md">
-                        Our Story
+                      <NavigationMenuLink asChild>
+                        <Link to="/about" className="block p-2 hover:bg-accent rounded-md">
+                          Our Story
+                        </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md">
                         Team
@@ -62,26 +67,38 @@ export function Header() {
                     <div className="w-[600px] p-6 grid grid-cols-2 gap-4">
                       <div>
                         <h4 className="font-semibold mb-3 text-gradient">ATL Services</h4>
-                        <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                          TV / Radio / Print Campaigns
+                        <NavigationMenuLink asChild>
+                          <Link to="/services" className="block p-2 hover:bg-accent rounded-md text-sm">
+                            TV / Radio / Print Campaigns
+                          </Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                          Outdoor Hoardings
+                        <NavigationMenuLink asChild>
+                          <Link to="/services" className="block p-2 hover:bg-accent rounded-md text-sm">
+                            Outdoor Hoardings
+                          </Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                          Transit Advertisements
+                        <NavigationMenuLink asChild>
+                          <Link to="/services" className="block p-2 hover:bg-accent rounded-md text-sm">
+                            Transit Advertisements
+                          </Link>
                         </NavigationMenuLink>
                       </div>
                       <div>
                         <h4 className="font-semibold mb-3 text-gradient">Digital Marketing</h4>
-                        <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                          Meta & Google Ads
+                        <NavigationMenuLink asChild>
+                          <Link to="/services" className="block p-2 hover:bg-accent rounded-md text-sm">
+                            Meta & Google Ads
+                          </Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                          Local SEO & Maps
+                        <NavigationMenuLink asChild>
+                          <Link to="/services" className="block p-2 hover:bg-accent rounded-md text-sm">
+                            Local SEO & Maps
+                          </Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                          Website & App Design
+                        <NavigationMenuLink asChild>
+                          <Link to="/services" className="block p-2 hover:bg-accent rounded-md text-sm">
+                            Website & App Design
+                          </Link>
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -94,43 +111,61 @@ export function Header() {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="w-[500px] p-4 grid grid-cols-2 gap-2">
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                        Automotive
+                      <NavigationMenuLink asChild>
+                        <Link to="/industries" className="block p-2 hover:bg-accent rounded-md text-sm">
+                          Automotive
+                        </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                        Retail & FMCG
+                      <NavigationMenuLink asChild>
+                        <Link to="/industries" className="block p-2 hover:bg-accent rounded-md text-sm">
+                          Retail & FMCG
+                        </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                        Real Estate
+                      <NavigationMenuLink asChild>
+                        <Link to="/industries" className="block p-2 hover:bg-accent rounded-md text-sm">
+                          Real Estate
+                        </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                        Education
+                      <NavigationMenuLink asChild>
+                        <Link to="/industries" className="block p-2 hover:bg-accent rounded-md text-sm">
+                          Education
+                        </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                        Healthcare
+                      <NavigationMenuLink asChild>
+                        <Link to="/industries" className="block p-2 hover:bg-accent rounded-md text-sm">
+                          Healthcare
+                        </Link>
                       </NavigationMenuLink>
-                      <NavigationMenuLink className="block p-2 hover:bg-accent rounded-md text-sm">
-                        Hospitality
+                      <NavigationMenuLink asChild>
+                        <Link to="/industries" className="block p-2 hover:bg-accent rounded-md text-sm">
+                          Hospitality
+                        </Link>
                       </NavigationMenuLink>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                    Portfolio
+                  <NavigationMenuLink asChild>
+                    <Link to="/portfolio" className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                      Portfolio
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                    Blog
+                  <NavigationMenuLink asChild>
+                    <Link to="/blog" className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                      Blog
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <NavigationMenuLink className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                    Contact Us
+                  <NavigationMenuLink asChild>
+                    <Link to="/contact" className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                      Contact Us
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
