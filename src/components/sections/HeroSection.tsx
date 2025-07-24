@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Play, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
@@ -69,8 +70,6 @@ export function HeroSection() {
               <span className="text-gradient">Local.</span>
               <br />
               <span className="text-gradient">Impactful.</span>
-          
-              
             </h1>
           </motion.h1>
 
