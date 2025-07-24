@@ -44,7 +44,7 @@ export function Header() {
                     About
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[400px] p-6 glass border border-white/10">
+                    <div className="min-w-[400px] w-[400px] p-6 glass border border-white/10 bg-background/95 backdrop-blur-md">
                       <NavigationMenuLink asChild>
                         <Link to="/about" className="block p-3 hover:bg-accent/70 rounded-lg transition-all duration-300 border border-transparent hover:border-white/20">
                           <div className="font-medium">Our Story</div>
@@ -68,7 +68,7 @@ export function Header() {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[700px] p-6 glass border border-white/10 grid grid-cols-2 gap-6">
+                    <div className="min-w-[700px] w-[700px] p-6 glass border border-white/10 bg-background/95 backdrop-blur-md grid grid-cols-2 gap-6">
                       <div className="space-y-3">
                         <h4 className="font-semibold mb-4 text-gradient flex items-center">
                           <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
@@ -126,7 +126,7 @@ export function Header() {
                     Industries
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[550px] p-6 glass border border-white/10 grid grid-cols-2 gap-4">
+                    <div className="min-w-[550px] w-[550px] p-6 glass border border-white/10 bg-background/95 backdrop-blur-md grid grid-cols-2 gap-4">
                       <NavigationMenuLink asChild>
                         <Link to="/industries" className="block p-3 hover:bg-accent/70 rounded-lg text-sm transition-all duration-300 border border-transparent hover:border-white/20">
                           <div className="font-medium">Automotive</div>
