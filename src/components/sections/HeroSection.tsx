@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Play, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden mt-10">
       {/* Animated Background */}
       <div className="absolute inset-0 hero-bg"></div>
 
@@ -70,6 +69,8 @@ export function HeroSection() {
               <span className="text-gradient">Local.</span>
               <br />
               <span className="text-gradient">Impactful.</span>
+          
+              
             </h1>
           </motion.h1>
 
@@ -79,14 +80,18 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Crafting a dynamic digital ecosystem that seamlessly integrates all
-            marketing channels to transform visitors into loyal clients,
-            ensuring a
+            Transform your commercial vehicle dealership with AI-powered
+            marketing strategies that deliver
             <span className="text-gradient font-semibold">
               {" "}
-              holistic and impactful digital presence
+              300% more qualified leads
             </span>{" "}
-            across all industries.
+            and
+            <span className="text-gradient font-semibold">
+              {" "}
+              40% lower cost per lead
+            </span>
+            .
           </motion.p>
         </motion.div>
 
@@ -108,6 +113,7 @@ export function HeroSection() {
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
           </Button>
+
           <Button
             variant="outline"
             size="lg"

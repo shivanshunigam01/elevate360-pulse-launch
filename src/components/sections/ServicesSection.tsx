@@ -37,12 +37,10 @@ const services = [
   },
   {
     icon: Users,
-    title: "BTL Services",
-    description:
-      "Dealer events, school promotions, and on-ground staff deployment for direct engagement.",
-    expandedText:
-      "Below-the-line activations including dealer engagement events, educational institution promotions, targeted activation campaigns, and professional on-ground staff deployment for maximum impact.",
-    color: "from-accent to-primary",
+    title: "Social Media Growth",
+    description: "Build authentic relationships with  your business buyers in your area.",
+    expandedText: "Strategic content creation, community building, and influencer partnerships specifically designed for the  your business ecosystem in India.",
+    color: "from-purple-500 to-pink-500"
   },
   {
     icon: Camera,
@@ -54,13 +52,11 @@ const services = [
     color: "from-secondary to-primary",
   },
   {
-    icon: MapPin,
-    title: "Onsite Campaigns",
-    description:
-      "Mobile van branding, product demos, and festive event promotions with feedback systems.",
-    expandedText:
-      "On-location marketing activations including branded mobile van campaigns, live product demonstrations, festive event promotions, and comprehensive survey and feedback collection systems.",
-    color: "from-primary to-accent",
+    icon: Globe,
+    title: "Website Development",
+    description: "High-converting, mobile-first websites optimized for  your business sales.",
+    expandedText: "Custom-built dealership websites with advanced search, inventory management, and lead capture forms optimized for  your business specifications.",
+    color: "from-indigo-500 to-blue-500"
   },
   {
     icon: BarChart3,
